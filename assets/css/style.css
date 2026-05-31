@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: calc((100% - 330px));
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.header {
+    padding: 24px 0;
+}
+.header .row{
+ justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+a{
+    text-decoration: none;
+}
+.list a{
+   color: #5E5E5E;
+  font-family: Hanken Grotesk;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+.icons ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+@media screen and (min-width:0) and (max-width:800px){
+  .list{
+    display: none;
+  }  
+
+  .hideicons{
+display: none;
+  }
+}
+
+/*start collection section*/
+.collections{
+    text-align: center;
+    padding: 88px 0;
+
+}
+.collections .row{
+    gap: 32px;
+}
+.collections .collection{
+    width: calc((100% - 96px)/4);
+}
+@media screen and (min-width:0) and (max-width:700px) {
+   .collections .collection{
+    width:calc((100% - 32px)/2);
+   }
+
+}
+@media screen and (min-width:701px) and (max-width:980px) {
+   .collections .collection{
+    width:calc((100% - 64px)/3);
+   }
+
+}
+.collection img{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.font{
+    color: #000000;
+    font-size:14px;
+    font-weight:153;
+    font-style: italic;
+    font-family: Libre Caslon Text;
+    text-transform: uppercase;
+}
+/*end collection section*/
