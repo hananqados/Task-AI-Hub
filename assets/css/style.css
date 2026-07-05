@@ -5,7 +5,7 @@
     
 }
 .container{
-    width: calc((100% - 130px));
+    width: 90%;
     margin: auto;
 
 }
@@ -69,13 +69,19 @@ display: none;
 }
 @media screen and (min-width:0) and (max-width:700px) {
    .collections .collection{
-    width:calc((100% - 32px)/2);
+    width:100%;
    }
 
 }
 @media screen and (min-width:701px) and (max-width:980px) {
    .collections .collection{
-    width:calc((100% - 64px)/3);
+    width:calc((100% -  32px)/2);
+   }
+
+}
+@media screen and (min-width:981px) and (max-width:1400px) {
+   .collections .collection{
+    width:calc((100% -  64px)/3);
    }
 
 }
